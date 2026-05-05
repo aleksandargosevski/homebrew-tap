@@ -11,7 +11,7 @@ class Skocko < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.0/skocko_darwin_amd64.tar.gz"
-      sha256 "ab37d427e762123d4f092a85ba35a696137d926edad6c23e2181029b71450e11"
+      sha256 "d6bffb0050e1a486e5c1ae46e677635dcf5710ae6068718dba17c50b244a454a"
 
       define_method(:install) do
         bin.install "skocko"
@@ -19,7 +19,7 @@ class Skocko < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.0/skocko_darwin_arm64.tar.gz"
-      sha256 "1e82c55f2feb33557050c321ad5b4b64c604299d22d8f6ce9a977ff256ca7501"
+      sha256 "fac5df78130b77fed441e10a4e1db3ef0c1fd227b5af64b9fe46dce92f5e1318"
 
       define_method(:install) do
         bin.install "skocko"
@@ -30,14 +30,14 @@ class Skocko < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.0/skocko_linux_amd64.tar.gz"
-      sha256 "57ee4618b490dc4cef6c94f39324de72ccf1e5a042d9cf5599e4f7e632d7804e"
+      sha256 "a9267453e6a070fa6918afa9cbe24783ae75c5522c390d20a57b6c1d3469d143"
       define_method(:install) do
         bin.install "skocko"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.0/skocko_linux_arm64.tar.gz"
-      sha256 "efaa7f8fddaa87b0648b17a3bafc011f314f21fd60c68b53c4d8f98bc48fe3e0"
+      sha256 "3f612453353376cedb8b3e722e003d7bf5565b39c9b5ba809b3259410db3937b"
       define_method(:install) do
         bin.install "skocko"
       end
