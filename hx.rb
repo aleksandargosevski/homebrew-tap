@@ -5,13 +5,13 @@
 class Hx < Formula
   desc "A fast shell history manager with fuzzy search, templates, and analytics"
   homepage "https://github.com/aleksandargosevski/hx"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.1/hx_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6a89dc9bc32b28373edb9b7076bf3aaf65f7eb87bb0cf77a156cb04c60c96412"
+      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.2/hx_0.1.2_darwin_amd64.tar.gz"
+      sha256 "d203d381b7396efc75926ca0826b1c458eed3b9b16a155c8fd21aec3757cad21"
 
       define_method(:install) do
         bin.install "hx"
@@ -19,8 +19,8 @@ class Hx < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.1/hx_0.1.1_darwin_arm64.tar.gz"
-      sha256 "417a0c7579f26c31b943f2ff12b317db04a6e387315b0dfb5ece0b628b95e8ab"
+      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.2/hx_0.1.2_darwin_arm64.tar.gz"
+      sha256 "bfb460e2c1db27b9d551a2b47028c1085d6c2ae96b26c5ad9b73dd087083c473"
 
       define_method(:install) do
         bin.install "hx"
@@ -31,16 +31,16 @@ class Hx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.1/hx_0.1.1_linux_amd64.tar.gz"
-      sha256 "83b43f05e670631d9e578e4a5ee42b673ba786e270143a75c975c26752c4296b"
+      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.2/hx_0.1.2_linux_amd64.tar.gz"
+      sha256 "a786e88068ccae4eee696c1c5065fea6a1292a9d18486e84eb575b2489a09d34"
       define_method(:install) do
         bin.install "hx"
         generate_completions_from_executable(bin/"hx", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.1/hx_0.1.1_linux_arm64.tar.gz"
-      sha256 "63780a7165d1cf2b9c3bb490eeb1e4a79ccc6fd15804c4d63e54c68e48741aac"
+      url "https://github.com/aleksandargosevski/hx/releases/download/v0.1.2/hx_0.1.2_linux_arm64.tar.gz"
+      sha256 "feb9232b619474b7e12809b8c5580cfa73d9726e2ab9fca32ad2495d3689916b"
       define_method(:install) do
         bin.install "hx"
         generate_completions_from_executable(bin/"hx", "completion")
