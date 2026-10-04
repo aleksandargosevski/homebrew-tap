@@ -5,23 +5,23 @@
 class Arhiva < Formula
   desc "Fast Miller-columns file manager for the terminal"
   homepage "https://github.com/aleksandargosevski/arhiva"
-  version "1.0.6"
+  version "1.0.7"
   license "MIT"
 
   depends_on "zoxide" => :optional
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/aleksandargosevski/arhiva/releases/download/v1.0.6/arhiva_1.0.6_darwin_amd64.tar.gz"
-    sha256 "f970d32a607ec35bc1adb7b4001db14d5000e9de54a2d381321e82798a9312d6"
+    url "https://github.com/aleksandargosevski/arhiva/releases/download/v1.0.7/arhiva_1.0.7_darwin_amd64.tar.gz"
+    sha256 "e7b3ee7f52fa64c3ed495091937674ee6350cfa8fe3bd2b03a70c8af38653d56"
 
     define_method(:install) do
       bin.install "arhiva"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/aleksandargosevski/arhiva/releases/download/v1.0.6/arhiva_1.0.6_darwin_arm64.tar.gz"
-    sha256 "1f06269e513c4c4b409ac4996434760bb7e7df1ae9f56209f734123cd8c0f36b"
+    url "https://github.com/aleksandargosevski/arhiva/releases/download/v1.0.7/arhiva_1.0.7_darwin_arm64.tar.gz"
+    sha256 "466da0551b099f844ae0c12fc204d40943dc4546682855548ec12d5fea410d18"
 
     define_method(:install) do
       bin.install "arhiva"
