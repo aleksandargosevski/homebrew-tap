@@ -2,7 +2,7 @@ class Pismo < Formula
   desc "Switches the keyboard layout per app and per text field"
   homepage "https://github.com/aleksandargosevski/pismo"
   url "https://github.com/aleksandargosevski/pismo/releases/download/v0.0.1/Pismo-0.0.1.zip"
-  sha256 "46a16c65c856e3b7489d9f3957cf1f14e7ad88dbd3fba64ab93ab72f0f59d79c"
+  sha256 "2fd3e5834a612ae65528cff4a372dfb1f1ed9c745255f3c61b47e693a2cce4cd"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
