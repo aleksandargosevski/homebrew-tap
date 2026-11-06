@@ -5,21 +5,21 @@
 class Skocko < Formula
   desc "Smart tmux session manager with a built-in TUI picker"
   homepage "https://github.com/aleksandargosevski/skocko"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.1/skocko_darwin_amd64.tar.gz"
-      sha256 "af0c0afb5370ada152aa86132277ca3265616e12e9713963da386ec6d39f3959"
+      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.2/skocko_darwin_amd64.tar.gz"
+      sha256 "c607b958b01ceb671f0b563858d3345bab6e0df51796c9869c548285bc612069"
 
       define_method(:install) do
         bin.install "skocko"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.1/skocko_darwin_arm64.tar.gz"
-      sha256 "2fbbe8883fefdda3f9319fabc058e64f6edf6ba83e8dc7fb4b80660202d7a93a"
+      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.2/skocko_darwin_arm64.tar.gz"
+      sha256 "6892f91e67b849a55c44526535659a4e18a16fe712c91ed1807ca8efa65ddad7"
 
       define_method(:install) do
         bin.install "skocko"
@@ -29,15 +29,15 @@ class Skocko < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.1/skocko_linux_amd64.tar.gz"
-      sha256 "751b844bd1c69b145d70c8047c6e15649cdbe086b9fbd982af73d567aac8f512"
+      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.2/skocko_linux_amd64.tar.gz"
+      sha256 "9e61a9a782404e580233e9d27e0af187d87b6403a55d71fcf3c4d790323b7e0e"
       define_method(:install) do
         bin.install "skocko"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.1/skocko_linux_arm64.tar.gz"
-      sha256 "b546004350040d32360de82b687c1a86f123b0d4cf618360e28540c0cba3d7ce"
+      url "https://github.com/aleksandargosevski/skocko/releases/download/v0.1.2/skocko_linux_arm64.tar.gz"
+      sha256 "69a67178efda67f316a3721d491c538d79fa8252e4176f0a26ed5342e86f5c92"
       define_method(:install) do
         bin.install "skocko"
       end
