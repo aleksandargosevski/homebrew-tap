@@ -1,8 +1,8 @@
 class Poscar < Formula
   desc "Fast, keyboard-first mail app for Gmail and IMAP"
   homepage "https://github.com/aleksandargosevski/poscar"
-  url "https://github.com/aleksandargosevski/poscar/releases/download/v0.2.3/Poscar-0.2.3.zip"
-  sha256 "07c366ea005a7bdcdd119a982c521cd3d2e5e4497b0eaad50fb1d4ad478c2804"
+  url "https://github.com/aleksandargosevski/poscar/releases/download/v0.2.4/Poscar-0.2.4.zip"
+  sha256 "b2be041d7f7e937d5d2fac6e84e7f90dace88162409aea83e031ea34591cbb19"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
