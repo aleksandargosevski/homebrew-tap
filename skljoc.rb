@@ -1,8 +1,8 @@
 class Skljoc < Formula
   desc "Screenshots with a floating preview and a quick annotation editor"
   homepage "https://github.com/aleksandargosevski/skljoc"
-  url "https://github.com/aleksandargosevski/skljoc/releases/download/v0.1.1/Skljoc-0.1.1.zip"
-  sha256 "cf6b8bf355c1a5666147d5a03fbfa66a6109c3a41c3e8875c3b1a1c19d0c652a"
+  url "https://github.com/aleksandargosevski/skljoc/releases/download/v0.1.2/Skljoc-0.1.2.zip"
+  sha256 "b362a94de7b42976f1d7f357afb9bd9d9fe28dd4bff5650bef207335374164a4"
 
   depends_on arch: :arm64
   depends_on macos: :sequoia
