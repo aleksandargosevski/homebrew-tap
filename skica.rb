@@ -1,8 +1,8 @@
 class Skica < Formula
   desc "Fast, keyboard-first design app for macOS"
   homepage "https://github.com/aleksandargosevski/skica"
-  url "https://github.com/aleksandargosevski/skica/releases/download/v0.1.0/Skica-0.1.0.zip"
-  sha256 "b280cf57124c8ef5ad103ff5cb4234308d975fd15de601b70d02b346dfbff898"
+  url "https://github.com/aleksandargosevski/skica/releases/download/v0.2.0/Skica-0.2.0.zip"
+  sha256 "1e362498e64666a8b1db1cf1d028b9fd8859cc0fc4d68790ea33e538523252fe"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
